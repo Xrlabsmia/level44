@@ -1,90 +1,120 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap'
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');)
 
 body {
-  background: linear-gradient(to bottom, #f1f2f4 0%, #f1f2f4 50%, #ffffff 50%, #ffffff 100%);
+  background-color: #000;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0ff;
+}
+
+p {
+  color: #0cc;
+}
+
 a {
-  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+  color: #0ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0cc;
+  text-decoration: underline;
+}
+
+button {
+  background-color: #0ff;
+  color: #000;
+  border: 2px solid #0ff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #000;
+  color: #0ff;
+  cursor: pointer;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #0ff;
+  color: #0ff;
+  padding: 5px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #0cc;
 }
 
 .container {
-  max-width: 960px;
-  margin: auto auto;
-  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.heading {
-  font-size: 4rem;
-  font-weight: bold;
+.section-header {
   text-align: center;
-  color: #1a202c;
-  margin-bottom: 2rem;
-  font-family: 'IM Fell English', serif;
-}
-h1{
-  font-family: 'IM Fell English', serif;
-  color: #1a202c;
-  
-  -webkit-text-stroke: 3px purple;
-  
-   color: white;
-   text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.6);
-  
-
-}
-@keyframes parchment-roll {
-  0% {
-    background-color: #e3d3a8;
-  }
-  100% {
-    background-color: #f8e4bc;
-  }
+  margin-top: 100px;
 }
 
-.scroll-wrapper {
-  background-color: #e3d3a8;
-  border: 1px solid #7b3f00;
-  border-radius: 5px;
-  padding: 20px;
-  height: 400px;
-  width: 300px;
-  overflow-y: scroll;
-  animation: parchment-roll 10s ease-in-out infinite alternate;
+.section-header h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
+.section-header p {
+  font-size: 18px;
+}
 
-.subheading {
-  font-size: 2rem;
+.section-content {
+  margin-top: 50px;
   text-align: center;
-  color: #4a5568;
-  margin-bottom: 2rem;
 }
 
-.gradient-box {
-  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #f1f2f4 50%, #f1f2f4 100%);
-  padding: 2rem;
-  border-radius: 0.5rem;
+.section-content p {
+  font-size: 24px;
+  line-height: 1.5;
 }
 
-.text-lg {
-  font-size: 2rem;
-  line-height: 2.5rem;
-  color: #2d3748;
+.section-content button {
+  margin-top: 50px;
 }
 
-.btn {
-  background-color: #4a5568;
-  color: #ffffff;
-  font-size: 1.5rem;
-  border-radius: 0.25rem;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.section-footer {
+  text-align: center;
+  margin-top: 100px;
 }
 
-.btn:hover {
-  background-color: #2d3748;
+.section-footer p {
+  font-size: 18px;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  .section-header h2 {
+    font-size: 24px;
+  }
+  
+  .section-content p {
+    font-size: 18px;
+  }
+}
+
