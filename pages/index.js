@@ -46,18 +46,18 @@ export default function Home() {
   return (
     <div>
     
-    <div height="100vh" className="subpixel-antialiased bg-gradient-to-b from-indigo-500 to-pink-500 border-solid scrolls ">
+    <div height="100vh" className="subpixel-antialiased bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ">
       <div className="container mx-auto py-10 border-solid">
         <Head>
-          <title>LEVEL_44_DOT_ART</title>
+          <title>FLAMINGO AI ASSITANT</title>
         </Head>
         <div className="gradient-box" height="100vh">
-          <h1 className="text-5xl font-bold text-center text-gray-800 mb-8">
-            LEVEL 44 DOT ART{" "}
+          <h1 className="text-5xl font-bold text-center text-pink-300 mb-8">
+            ASK FLAMINGO ANYTHING{" "}
           </h1>
-          <p className="text-2xl text-center text-gray-600 mb-4">
+          <p className="text-2xl text-center text-aqua-600 mb-4">
             <a href="https://replicate.com/22-hours/vintedois-diffusion/versions/28cea91bdfced0e2dc7fda466cc0a46501c0edc84905b2120ea02e0707b967fd">
-              educate yourself
+              XRMIAMI Presents
             </a>
           </p>
           <form className="flex flex-col items-center  w-full text-slate-900" onSubmit={handleSubmit}>
@@ -69,7 +69,7 @@ export default function Home() {
               className="form-input mb-5 p-5 rounded-lg text-center"
             />
             <button type="submit" className="btn">
-              CLICK TO DREAM!
+              Generate 
             </button>
           </form>
 
@@ -87,7 +87,7 @@ export default function Home() {
                     width="640"
                     height="640"
                     className="max-w-full h-auto mx-auto"
-                    style={{ maxWidth: '640px', maxHeight: '640px' }}
+                    style={{ maxWidth: '75vh', maxHeight: '640px' }}
                   />
                 <div className="scrolls"></div>
 
@@ -101,7 +101,7 @@ export default function Home() {
       </div>
         
     </div>
-    <footer><p className="text-center">ⓩⓔⓝ {new Date().getFullYear()} courtesy Gennaro Schiano, Alan Mitchell, and David Simon © SEED DIGITAL</p></footer>
+    <footer><p className="text-center">ⓩⓔⓝ {new Date().getFullYear()}XR R&D by Gennaro</p></footer>
     </div>
   );
 }
